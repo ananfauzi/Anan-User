@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Anan User, Magento 2.4 custom admin user module supported aws cognito
+ * php version 8.1
+ * 
+ * @category Admin User
+ * @package  Aws Cognito
+ * @author   Anan Fauzi <mr.ananfauzi@gmail.com>
+ * @license  MIT license <https://opensource.org/licenses/MIT>
+ * @link     https://github.com/ananfauzi
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="login.content">
+            <block class="Magento\Backend\Block\Template"
+                name="anan_user_auth_login_buttons"
+                template="Anan_User::login/buttons.phtml"
+                after="admin.login"
+            >
+                <arguments>
+                    <argument name="login_view_model" xsi:type="object">Anan\User\ViewModel\Adminhtml\Login</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

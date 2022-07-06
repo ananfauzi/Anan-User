@@ -1,0 +1,26 @@
+{
+    "name": "Anan/User",
+    "description": "Magento 2.4 custom admin user module supported aws cognito",
+    "keywords": ["User", "admin backend"],
+
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "files": [ "registration.php" ],
+        "psr-4": {
+            "Anan\\User\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Anan Fauzi",
+            "email": "mr.ananfauzi@gmail.com"
+        }
+    ]
+}

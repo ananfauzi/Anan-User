@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+/**
+ * Anan User, Magento 2.4 custom admin user module supported aws cognito
+ * php version 8.1
+ * 
+ * @category Admin User
+ * @package  Aws Cognito
+ * @author   Anan Fauzi <mr.ananfauzi@gmail.com>
+ * @license  MIT license <https://opensource.org/licenses/MIT>
+ * @link     https://github.com/ananfauzi
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\User\Model\User">
+        <plugin name="anan_user_plugin_magento_user_model_user" type="Anan\User\Plugin\Magento\User\Model\UserPlugin" />
+    </type>
+    <type name="Magento\User\Model\Notificator">
+        <plugin name="anan_user_plugin_magento_user_model_notificator" type="Anan\User\Plugin\Magento\User\Model\NotificatorPlugin" />
+    </type>
+</config>
